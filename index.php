@@ -1,5 +1,5 @@
 <?php
 
-echo "Hello World!";
+echo "Hello World! azure ";
 include "test1.html";
 ?>
