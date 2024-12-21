@@ -1,9 +1,6 @@
 <?php
 
-echo "Hello World! azure ";
+echo "Hello World! azure 2";
 include "test1.html";
-echo"<body>
-<div class="box">heelo 2</div>
-</body>
-</html>";
+
 ?>
