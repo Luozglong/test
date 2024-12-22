@@ -14,7 +14,7 @@ while($querexcutr = mysqli_fetch_array($queryresive))
 {
    
   echo "<div class=\"conten2\">
-  <img class=\"one\" style=\"float: left;\" src=\" ".$querexcutr['imagelink']." \" width=\"50%\" height=\"auto\">
+
   <h1>".$querexcutr['nguoinhan']."</h1>
   <h2>".$querexcutr['dienthoai']."<h1>
   <h3>".$querexcutr['diachi']."</h1>   
