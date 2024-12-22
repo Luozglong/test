@@ -1,6 +1,6 @@
 <?php
 
-echo "Hello World! azure 3";
+echo "Hello World! azure 4";
 include "test1.html";
 $serverName = "banhang3.database.windows.net"; // update me
 $connectionOptions = array(
@@ -17,13 +17,8 @@ if ($getResults == FALSE){
     echo (sqlsrv_errors());}
 
 while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) { 
-    echo "<div>
-    <h4>".$row['nguoinhan']."</h4>
-    <h4>".$row['dienthoai']."<h4>
-    <h4>".$row['diachi']."</h4>   
-    <h4>".$row['ngaygiaohang']."</h4> 
-    <br>".$row['ghichu']."<br/>
-    </div> ";
+    echo ($row['nguoinhan'] . " " . $row['dienthoai'] . PHP_EOL);
 }   
+sqlsrv_free_stmt($getResults);
 echo"</body></html>";
 ?>
