@@ -9,7 +9,7 @@ try{
     $query = "select * from [dbo].[vandon]";
     
     $queryresive = mysqli_query($conn,$query);
-    
+    echo"<h1> work</h1>";
 }catch{
     echo"<h1> not work</h1>";
 }
