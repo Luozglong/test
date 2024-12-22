@@ -17,7 +17,7 @@ if ($getResults == FALSE){
     echo (sqlsrv_errors());}
 
 while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) { 
-    echo ($row['nguoinhan'] . " " . $row['dienthoai'] . PHP_EOL);
+    echo ("<div class=\"box\">".$row['nguoinhan'] . " " . $row['dienthoai']."<div>" . PHP_EOL);
 }   
 sqlsrv_free_stmt($getResults);
 echo"</body></html>";
