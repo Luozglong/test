@@ -1,6 +1,6 @@
 <?php
 
-echo "Hello World! azure 4";
+echo "<div class = \"conten2\">Hello World! azure 4";
 include "test1.html";
 $serverName = "banhang3.database.windows.net"; // update me
 $connectionOptions = array(
@@ -12,7 +12,7 @@ $connectionOptions = array(
 $conn = sqlsrv_connect($serverName, $connectionOptions);
 $tsql= "SELECT * FROM [dbo].[vandon] ";
 $getResults= sqlsrv_query($conn, $tsql);
-echo ("Reading data from table" . PHP_EOL);
+echo ("Reading data from table</div>" . PHP_EOL);
 if ($getResults == FALSE){
     echo (sqlsrv_errors());}
 
