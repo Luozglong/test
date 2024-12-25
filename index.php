@@ -1,6 +1,6 @@
 <?php
 
-echo "<div class = \"conten2\">Hello World! azure 4";
+echo "<div class = \"conten2\">bai tap lon dien toan dam may azure 4";
 include "test1.html";
 $serverName = "banhang3.database.windows.net"; // update me
 $connectionOptions = array(
